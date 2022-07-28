@@ -30,9 +30,10 @@ app.use((req, res, next) => {
   app.use('/api/questions', questionRoutes);
 
   //Serve static assets id in production
+  __dirname = path.resolve();
   if(process.env.NODE_ENV === 'production') {
     //Set static folder
-    app.use(express.static('frontend/build'));
+    app.use(express.static(path.join(__dirname, 'frontend/build')));
 
     app.get('*', (req, res) => {
       res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
