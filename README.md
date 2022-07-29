@@ -1,12 +1,12 @@
 # ComeJoin
 ## MERN APP
----
-##⚡To launch frontend  
----
-*cd frontend
-*npm start
 
-##⚡To launch backend  
+### ⚡To launch frontend  
 ---
-*cd backend
-*nodemon server
+* cd frontend
+* npm start
+
+### ⚡To launch backend  
+---
+* cd backend
+* nodemon server
